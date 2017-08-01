@@ -13,4 +13,5 @@ Pretty much, yeah. Plus, it's a good learning experience and I can host future s
 ## Why isn't there a whole lot on here, then?
 
 it's not done lol.
+ 
 In all seriousness, though, it IS still in it's early stages and has a lot to be added, but I need a way to test functions on mobile devices, so please be patient.
