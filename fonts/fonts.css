@@ -2,9 +2,9 @@
 /* Fonts */
 @font-face{
 	font-family: Candy;
-	src: url('Candrb__.ttf');
+	src: url(candrb.ttf);
 }
 @font-face{
 	font-family: Luzro;
-	src: url('LUZRO.ttf');
+	src: url(luzro.ttf);
 }

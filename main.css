@@ -1,12 +1,20 @@
 /* 
 ==================================================
-BLUE: #3247a0
-BABY BLUE: #8299ff
-DARK BLUE: #202d66
-MAHOGANY/RED: #a03247
-GRAY: #e6e6e6
-LIGHT GRAY: #f9f9f9
-BG GRAY & Text: #343434
+Blue: #3247a0
+Red: #a03247
+Green: #47a032
+Gray: #343434
+White: #f9f9f9
+
+blue: #8299ff
+red: #ca556b
+green: #6bca55
+gray: #e6e6e6
+
+BLUE: #202d66
+RED: #66202d
+GREEN: #2d6620
+GRAY: #0e0e0e
 ==================================================
 */
 
@@ -17,24 +25,40 @@ h1 {
 	font-family: Luzro, Verdana, Geneva, sans-serif;
 }
 
-/* Background */
-html {
-	background: url(assets/scott-webb-13581.jpg) no-repeat center center fixed, #343434;
-	background-size: cover;
-	z-index: 0;
-	transition: background 5s linear;
-}
-body {
-	margin: 0;
-	padding: 0;
-	min-height: 100%;
-}
-
-
-
 /*@supports not (grid-area: auto) {*/
-	/* Header, Body, and Footer */
+	/* HTML, Header, Body, and Footer */
+	html, body {
+	    margin:0;
+	    padding:0;
+	    height:100%;
+		overflow-x: hidden;
+	}
+	html {
+		background: url(assets/diamond.svg) 50% repeat, #343434;
+		background-size: 5%, cover;
+		z-index: 0;
+	}
 	header {
+		padding: 10px;
+		min-height: 7vh;
+	}
+	footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 7vh;   /* Height of the footer */
+	}
+	
+	/* Content Containers */
+	#page-container {
+	    min-height: 100%;
+	    position: relative;
+	}
+	.body-content {
+	   padding-top: 7vh;
+	   padding-bottom: 7vh;   /* Height of the footer */
+	}
+	.header-content {
 		position: absolute;
 		display: block;
 		z-index: 99999;
@@ -42,6 +66,25 @@ body {
 		width: 100vw;
 		text-align: center;
 	}
+	.footer-content {
+		color: #8299ff;
+		font-family: Luzro, Verdana, Geneva, sans-serif;
+		font-size: 120%;
+		text-align: center;
+		margin-top: 1%;
+		/*text-shadow: 0px 0px 4px #000;*/
+		/*border-top: solid 1px #fff;*/
+	}
+	.footer-content a, .footer-content a:visited {
+		color: #8299ff;
+		text-decoration: none;
+	}
+	.footer-content a:hover, .footer-content a:active {
+		color: #ca556b;
+		text-decoration: none;
+	}
+	
+	/* Logo */
 	.header-logo {
 		color: #f9f9f9;
 		font-family: Candy, Impact, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -60,76 +103,56 @@ body {
 		background-image: radial-gradient(18vw, #f9f9f9, rgba(0,0,0,0)), radial-gradient(18vw, #f9f9f9, rgba(0,0,0,0));
 		background-position: 0, 0, 0, 100%;
 	}
-	body {
-		/*min-height: 100%;*/
-		padding-bottom: 5%;
-		display: block;
-		top: 10vh;
-	}
-	footer {
+	
+	/* Navigation */
+	.nav-container {
 		position: absolute;
+		display: block;
 		width: 100vw;
-		min-height: 5%;
-		bottom: 0;
 	}
-	.footer-content {
-		width: 100%;
-		height: auto;
-		color: #8299ff;
-		font-family: Luzro, Verdana, Geneva, sans-serif;
-		font-size: 120%;
-		text-align: center;
-		/*text-shadow: 0px 0px 4px #000;*/
-		margin-top: 2%;
-		/*border-top: solid 1px #fff;*/
-	}
-	.footer-content a, .footer-content a:visited {
-		color: #8299ff;
-		text-decoration: none;
-	}
-	.footer-content a:hover, .footer-content a:active {
-		color: #a03247;
-		text-decoration: none;
+	.nav-button {
+		font-size: 100%;
+		color: #fff;
 	}
 	
-	/* In case page needs proper scrolling */
-	html + .overflow {
-		margin: 0;
-		padding: 0;
-		height: 100%;
-		min-height: 100%;
-		position: relative;
+	/* Index - Avatar */
+	#avatar {
+		display: block;
+		margin: auto;
+		width: 40%; 
+		border-radius: 100%; 
+		box-shadow: 0px 12px 10px -8px #101010
 	}
-	header + .overflow {
-		height: 20%;
+	
+	/* Projects - Backgrounds */
+	#projects-top {
+		min-height: 93vh;
+		margin-top: -18vh;
 	}
-	body + .overflow{
-		margin: 0;
-		padding: 0;
-		height: 100%;
-		min-height: 100%;
-		padding-top: 20%;
-		padding-bottom: 5%;
-	}
-	footer + .overflow{
+	.projectinfo-img{
 		position: absolute;
-		width: 100vw;
-		min-height: 5%;
-		bottom: 0;
+		display: none;
+		min-width: 100vw;
+		height: 95vh;
+		min-height: 59vh;
 	}
 	
 	/* Projects - Bottom Box */
+	#projects-bottom {
+		position: relative;
+		min-height: 32vh;
+	}
 	.projectinfo-container{
 		position: absolute;
-		overflow-y: scroll;
 		background: #f9f9f9;
+		padding-top: 14%;
 		left: 0;
 		right: 0;
-		bottom: 5%;
+		top: 0;
 		height: 34vh;
 	}
 	.projectinfo-title{
-		position: fixed;
+		position: absolute;
 		z-index: 100;
 		width: 100vw;
 		background: #000;
@@ -141,51 +164,41 @@ body {
 		padding-top: 5px;
 		padding-bottom: 5px;
 		border-top: solid 4px #f9f9f9;
-		bottom: 39vh;
+		top: 0;
 		box-shadow: 0px 6px 12px -6px #1a1a1a;
 	}
 	.projectinfo-content{
 		display: block;
 		font-family: LUZRO, Verdana, Geneva, sans-serif;
-		font-size: 28px;
+		font-size: 18px;
 		color: #343434;
 		text-align: center;
 		padding: 20px 10px 20px 20px;
 	}
 	.projectinfo-container-dummy{
 		position: absolute;
-		overflow-y: scroll;
 		background: #f9f9f9;
+		padding-top: 14%;
 		left: 0;
 		right: 0;
-		bottom: 5%;
+		top: 0;
 		height: 34vh;
 	}
 	.projectinfo-title-dummy{
-		position: fixed;
+		position: absolute;
 		z-index: 100;
 		width: 100vw;
 		background: #000;
-		color: #050814;
+		color: #fff;
 		font-family: Verdana, Geneva, sans-serif;
 		font-size: 30px;
 		font-weight: bold;
 		text-align: center;
 		padding-top: 5px;
 		padding-bottom: 5px;
-		bottom: 39vh;
 		border-top: solid 4px #f9f9f9;
+		top: 0;
 		box-shadow: 0px 6px 12px -6px #1a1a1a;
-	}
-	
-	/* Projects - Backgrounds */
-	.projectinfo-img{
-		position: fixed;
-		display: none;
-		width: 180%;
-		height: auto;
-		min-height: 59vh;
-		bottom: 42vh ;
 	}
 	
 	/* Projects - Buttons */
@@ -197,8 +210,8 @@ body {
 		opacity: 0.15;
 		border: none;
 		color: #fff;
-		width: 10%;
-		height: 59vh;
+		width: 15%;
+		height: 93vh;
 		font-family: Luzro, Verdana, Geneva, sans-serif;
 		font-size: 250%;
 		-webkit-transition: all 1s linear;
@@ -212,8 +225,8 @@ body {
 		opacity: 0.65;
 		border: none;
 		color: #fff;
-		width: 10%;
-		height: 59vh;
+		width: 15%;
+		height: 93vh;
 		font-family: Luzro, Verdana, Geneva, sans-serif;
 		font-size: 250%;
 		-webkit-transition: all 0.25s linear;
@@ -227,8 +240,8 @@ body {
 		opacity: 0.65;
 		border: none;
 		color: #000;
-		width: 9%;
-		height: 59vh;
+		width: 14%;
+		height: 93vh;
 		font-family: Luzro, Verdana, Geneva, sans-serif;
 		font-size: 250%;
 		-webkit-transition: all 0.03s linear;
@@ -245,20 +258,69 @@ body {
 	/* Random Box Elements */
 	.box1 {
 		display: block; 
-		margin-top: 25vh;
 		width: 100vw; 
 		background: #f9f9f9;
+		margin-bottom: 5%;
 		min-height: 10vh;
 		font-family: Luzro, Verdana, Geneva, sans-serif; 
 		color: #343434;
 		text-align: center;
 		font-size: 18px;
 		border-bottom: solid 8px #3247a0;
-		border-radius: 7px 7px 0 0
+		border-radius: 7px 7px 0 0;
+		box-shadow: 0px 6px 12px -6px #000;
 	}
 	.box1-header {
 		background: #3247a0;
-		color: #8299ff;
+		color: #f9f9f9;
+		text-align: center;
+		font-size: 30px;
+		font-family: Candy, Impact, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		padding: 8px 8px 8px 8px;
+		border-radius: 5px 5px 0 0;
+		top: -5px;
+	}
+	.box2 {
+		display: block; 
+		width: 100vw; 
+		background: #f9f9f9;
+		margin-bottom: 5%;
+		min-height: 10vh;
+		font-family: Luzro, Verdana, Geneva, sans-serif; 
+		color: #343434;
+		text-align: center;
+		font-size: 18px;
+		border-bottom: solid 8px #a03247;
+		border-radius: 7px 7px 0 0;
+		box-shadow: 0px 6px 12px -6px #000;
+	}
+	.box2-header {
+		background: #a03247;
+		color: #f9f9f9;
+		text-align: center;
+		font-size: 30px;
+		font-family: Candy, Impact, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		padding: 8px 8px 8px 8px;
+		border-radius: 5px 5px 0 0;
+		top: -5px;
+	}
+	.box3 {
+		display: block; 
+		width: 100vw; 
+		background: #f9f9f9;
+		margin-bottom: 5%;
+		min-height: 10vh;
+		font-family: Luzro, Verdana, Geneva, sans-serif; 
+		color: #343434;
+		text-align: center;
+		font-size: 18px;
+		border-bottom: solid 8px #47a032;
+		border-radius: 7px 7px 0 0;
+		box-shadow: 0px 6px 12px -6px #000;
+	}
+	.box3-header {
+		background: #47a032;
+		color: #f9f9f9;
 		text-align: center;
 		font-size: 30px;
 		font-family: Candy, Impact, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
