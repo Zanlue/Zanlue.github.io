@@ -32,6 +32,8 @@ h1 {
 	    padding:0;
 	    height:100%;
 		overflow-x: hidden;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
 	}
 	html {
 		background: url(assets/diamond.svg) 50% repeat, #343434;
