@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html id="index">
+	<head>
+		<title>Zanlue - Index</title>
+		<meta charset="utf-8"></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Lato:100i|Roboto:300|Shadows+Into+Light+Two');</style>
+		<link rel="stylesheet" href="main.css"></link>
+		<link rel="icon" href="https://zanlue.github.io/icon.png"></link>
+	</head>
+	<body>
+		<div id="page-container">
+			<div class="nav-container">
+					<div class=button-wrap>
+						<div class=nav-button onclick="toggleMenu('open');">&#9776;</div>
+					</div>
+					<div class=button-wrap style="display: none;">
+						<div class=nav-close onclick="toggleMenu('close');">X</div>
+					</div>
+					<div class=menu-container style="display: none;">&nbsp
+						<ul id=menu>
+							<li class=menu-item><a href="index.html">Home</a></li>
+							<li class=menu-item><a href="projects.html">Projects</a></li>
+							<li class=menu-item><a href="">Blog</a></li>
+							<li class=menu-item><a href="">Contact</a></li>
+						</ul>
+					</div>
+			</div>
+		</div>	
+		<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<script src='scripts/menu.js'></script>
+		<script src='scripts/load.js'></script>
+	</body>
+</html>
