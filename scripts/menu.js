@@ -20,10 +20,10 @@ $(function(){
 	var window = document.getElementsByTagName("body");
 	var mobile = false;
 	
-	$(window).touchmove(function(event){
+	/*$(window).touchmove(function(event){
 		mobile = true;
 		$(button[0]).hide("slide", {direction: "down"}, 200);
-	});
+	});*/
 	
     $(window).scroll(function(event){
        var st = $(this).scrollTop();
