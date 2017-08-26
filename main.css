@@ -119,7 +119,8 @@ h1 {
 	.button-wrap {
 		z-index: 9002;
 		position: absolute;
-		-webkit-transform: translate(0, 0); 
+		-webkit-transform: translate(0, -10vh); 
+		-moz-transform: translate(0, 0); 
 		width: 100vw;
 		text-align: center;
 		bottom: 0;
