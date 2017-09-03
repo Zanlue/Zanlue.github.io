@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Zanlue - Blog</title>
+		<meta charset="utf-8"></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" href="../main.css"></link>
+		<base href="https://zanlue.github.io" target="_blank">
+		<style>@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Lato:100i|Roboto:300|Shadows+Into+Light+Two');</style>
+		
+		<link rel="icon" href="https://zanlue.github.io/icon.png"></link>
+	</head>
+	<body>
+		<div id="loadscreen-container">
+			<div class=loadicon>
+				<img class=diamond src="assets/diamond.svg">
+				</img>
+			</div>
+		</div>
+		<div id="page-container">
+			<div class="nav-container">
+					<div class=button-wrap>
+						<div class=nav-button onclick="toggleMenu('open');">&#9776;</div>
+					</div>
+					<div class=button-wrap style="display: none;">
+						<div class=nav-close onclick="toggleMenu('close');">X</div>
+					</div>
+					<div class=menu-container style="display: none;">&nbsp
+						<ul id=menu>
+							<li class=menu-item><a href="/index.html">Home</a></li>
+							<li class=menu-item><a href="/projects.html">Projects</a></li>
+							<li class=menu-item><a href="/blog/index.html">Blog</a></li>
+							<li class=menu-item><a href="">Contact</a></li>
+							<li>&nbsp;</li>
+						</ul>
+					</div>
+			</div>
+			
+			<header>
+				<div class=header-content>
+					<a class=header-logo href="/index.html">Zanlue</a>
+				</div>
+			</header>
+				
+			<div class=body-content>
+				<div id=posts-container>
+					<details id="No.0000">
+						<summary>
+							<div class=summary-wrapper>
+								<div class="post-thumbnail"><img src="https://source.unsplash.com/random"></img></div>
+								<p class="post-title" href="">Title of Post that's kind of a short summary</p>
+								<p class="post-date">08/26/2017</p>
+								<p class="post-readtime">1 Minute</p>
+								<p class="post-tags">#test #testing #123</p>
+							</div>
+						</summary>
+						<div class=details-wrapper>
+							<p class="post-preview">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate</p>
+						</div>
+					</details>
+				</div>
+			</div>
+			
+			<footer>
+				<div class=footer-content>
+					© 2017
+				</div>
+			</footer>
+		</div>	
+		<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<script src='/scripts/menu.js'></script>
+		<script src='/scripts/load.js'></script>
+	</body>
+</html>
