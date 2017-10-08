@@ -4,10 +4,10 @@
   "icon": {
     "url": "../assets/dots.png"
   },
-  "author": "Trello, Inc.",
+  "author": "Zanlue",
   "capabilities": [
     "board-buttons",
-    "callback",
+    "callback"
   ],
   "connectors": {
     "iframe": {
