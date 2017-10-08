@@ -20,7 +20,7 @@ var authenticationFailure = function() {
 
 window.Trello.authorize({
   type: 'popup',
-  name: 'Getting Started Application',
+  name: 'Zan\'s Webhook',
   scope: {
     read: 'true',
     write: 'true' },
