@@ -1,14 +1,13 @@
 {
-  "name": "Template",
-  "details": "A static sample Power-Up hosted on GitHub pages.",
+  "name": "Zan's Webhook",
+  "details": "WIP",
   "icon": {
     "url": "../assets/dots.png"
   },
-  "author": "Trello Inc",
+  "author": "Zanlue",
   "capabilities": [
     "board-buttons",
     "callback",
-    "card-buttons"
   ],
   "connectors": {
     "iframe": {
