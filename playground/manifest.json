@@ -4,7 +4,7 @@
   "icon": {
     "url": "../assets/dots.png"
   },
-  "author": "Zanlue",
+  "author": "Trello, Inc.",
   "capabilities": [
     "board-buttons",
     "callback",
