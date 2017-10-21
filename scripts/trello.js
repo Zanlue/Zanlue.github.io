@@ -10,7 +10,7 @@ window.TrelloPowerUp.initialize({
   }
 });
 
-var authenticationSuccess = function() {
+/*var authenticationSuccess = function() {
   console.log('Successful authentication');
 };
 
@@ -27,7 +27,7 @@ window.Trello.authorize({
   expiration: 'never',
   success: authenticationSuccess,
   error: authenticationFailure
-});
+});*/
 
 $.ajax({
 	type: "POST",
