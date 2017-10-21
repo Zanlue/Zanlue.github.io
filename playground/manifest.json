@@ -2,10 +2,11 @@
   "name": "Zan's Webhook",
   "details": "WIP",
   "icon": {
-    "url": "../assets/dots.png"
+    "url": "https://zanlue.github.io/assets/icon-white.svg"
   },
   "author": "Zanlue",
   "capabilities": [
+    "board-buttons",
     "callback"
   ],
   "connectors": {
