@@ -6,7 +6,6 @@
   },
   "author": "Zanlue",
   "capabilities": [
-    "board-buttons",
     "callback"
   ],
   "connectors": {
