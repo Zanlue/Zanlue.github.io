@@ -25,6 +25,16 @@ $(function(){
 		$(button[0]).hide("slide", {direction: "down"}, 200);
 	});*/
 	
+	document.addEventListener('touchstart', function(event){
+		mobile = true;
+		$(button[0]).hide("slide", {direction: "down"}, 200);
+	})
+	
+	document.addEventListener('touchend', function(event){
+		mobile = true;
+		$(button[0]).show("slide", {direction: "down"}, 200).delay(3500);
+	})
+	
     $(window).scroll(function(event){
        var st = $(this).scrollTop();
 	   
@@ -40,8 +50,8 @@ $(function(){
        }
        lastScrollTop = st;
 	   
-	   if (mobile) {
+	   /*if (mobile) {
 			$(button[0]).show("slide", {direction: "down"}, 200).delay(3500);
-	   }
+	   }*/
     });
 });
