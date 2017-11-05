@@ -44,7 +44,7 @@ $(function(){
 			else if ((menu_state == 'closed') && (touching == false)) {
 				$(button[0]).show("slide", {direction: "down"}, 200);
 			};
-		}, 35000);
+		}, 3500);
 	})
 	
     $(window).scroll(function(event){
