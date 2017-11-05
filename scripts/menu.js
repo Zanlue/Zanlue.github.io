@@ -3,15 +3,18 @@ var menu = document.getElementsByClassName("menu-container");
 var nav = document.getElementsByClassName("nav-container");
 var buttonOpen = document.getElementsByClassName("nav-button");
 var buttonClose = document.getElementsByClassName("nav-close");
+var menu_state = 'closed';
 	
 function toggleMenu(x) {
 	if (x == 'open') {
 		$(button[0]).hide("slide", {direction: "down"}, 200);
 		$(menu).show("slide", {direction: "down"}, 800, function(){ $(button[1]).show("slide", {direction: "down"}, 200); $(menu).css("overflow-y", "scroll"); $(menu).css("pointer-events", "auto")}).delay(500);
+		menu_state = 'open';
 	}
 	else if (x == 'close') {
 		$(button[1]).hide("slide", {direction: "down"}, 200);
 		$(menu).hide("slide", {direction: "up"}, 800, function(){ $(button[0]).show("slide", {direction: "down"}, 200);$(menu).css("overflow-y", "hidden"); $(menu).css("pointer-events", "none")}).delay(500);
+		menu_state = 'closed';
 	};
 }
 
@@ -27,12 +30,15 @@ $(function(){
 	
 	document.addEventListener('touchstart', function(event){
 		mobile = true;
-		$(button[0]).hide("slide", {direction: "down"}, 200);
+		if (menu_state == 'closed') {
+			$(button[0]).hide("slide", {direction: "down"}, 200);
+		}
 	})
 	
 	document.addEventListener('touchend', function(event){
-		mobile = true;
-		$(button[0]).show("slide", {direction: "down"}, 200).delay(3500);
+		if (menu_state == 'closed') {
+			$(button[0]).show("slide", {direction: "down"}, 200).delay(35000);
+		}
 	})
 	
     $(window).scroll(function(event){
