@@ -22,6 +22,7 @@ $(function(){
     var lastScrollTop = 0, delta = 80;
 	var window = document.getElementsByTagName("body");
 	var mobile = false;
+	var touching = false;
 	
 	/*$(window).touchmove(function(event){
 		mobile = true;
@@ -30,15 +31,23 @@ $(function(){
 	
 	document.addEventListener('touchstart', function(event){
 		mobile = true;
-		if (menu_state == 'closed') {
-			$(button[0]).hide("slide", {direction: "down"}, 200);
-		}
+		touching = true;
+		
+		setTimeout(function () {
+			if ((menu_state == 'closed') && (touching == true)) {
+				$(button[0]).hide("slide", {direction: "down"}, 200);
+			}
+		}, 2500);
 	})
 	
 	document.addEventListener('touchend', function(event){
-		if (menu_state == 'closed') {
-			$(button[0]).show("slide", {direction: "down"}, 200).delay(35000);
-		}
+		touching = false;
+		
+		setTimeout(function () {
+			if ((menu_state == 'closed') && (touching == false)) {
+				$(button[0]).show("slide", {direction: "down"}, 200).delay(35000);
+			}
+		}, 2500);
 	})
 	
     $(window).scroll(function(event){
