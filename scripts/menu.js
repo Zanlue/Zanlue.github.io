@@ -29,13 +29,22 @@ $(function(){
 		$(button[0]).hide("slide", {direction: "down"}, 200);
 	});*/
 	
+	document.addEventListener('touchend', function(event){
+		touching = false;
+		
+		setTimeout(function () {
+			if ((menu_state == 'closed') && (touching == false)) {
+				$(button[0]).show("slide", {direction: "down"}, 200);
+			}
+			else if ((menu_state == 'closed') && (touching == true)) {
+				$(button[0]).hide("slide", {direction: "down"}, 200);
+			};
+		}, 3500);
+	});
+	
 	document.addEventListener('touchstart', function(event){
 		mobile = true;
 		touching = true;
-		
-		document.addEventListener('touchend', function(event){
-			touching = false;
-		});
 		
 		setTimeout(function () {
 			if ((menu_state == 'closed') && (touching == true)) {
@@ -45,7 +54,7 @@ $(function(){
 				$(button[0]).show("slide", {direction: "down"}, 200);
 			};
 		}, 3500);
-	})
+	});
 	
     $(window).scroll(function(event){
        var st = $(this).scrollTop();
