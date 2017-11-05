@@ -33,21 +33,18 @@ $(function(){
 		mobile = true;
 		touching = true;
 		
+		document.addEventListener('touchend', function(event){
+			touching = false;
+		});
+		
 		setTimeout(function () {
 			if ((menu_state == 'closed') && (touching == true)) {
 				$(button[0]).hide("slide", {direction: "down"}, 200);
 			}
-		}, 2500);
-	})
-	
-	document.addEventListener('touchend', function(event){
-		touching = false;
-		
-		setTimeout(function () {
-			if ((menu_state == 'closed') && (touching == false)) {
-				$(button[0]).show("slide", {direction: "down"}, 200).delay(35000);
-			}
-		}, 2500);
+			else if ((menu_state == 'closed') && (touching == false)) {
+				$(button[0]).show("slide", {direction: "down"}, 200);
+			};
+		}, 35000);
 	})
 	
     $(window).scroll(function(event){
