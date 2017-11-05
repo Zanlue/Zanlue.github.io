@@ -39,7 +39,7 @@ $(function(){
 			else if ((menu_state == 'closed') && (touching == true)) {
 				$(button[0]).hide("slide", {direction: "down"}, 200);
 			};
-		}, 3500);
+		}, 3000);
 	});
 	
 	document.addEventListener('touchstart', function(event){
@@ -53,7 +53,7 @@ $(function(){
 			else if ((menu_state == 'closed') && (touching == false)) {
 				$(button[0]).show("slide", {direction: "down"}, 200);
 			};
-		}, 3500);
+		}, 3000);
 	});
 	
     $(window).scroll(function(event){
