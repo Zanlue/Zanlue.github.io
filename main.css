@@ -618,19 +618,20 @@ h1 {
 	.box1 {
 		display: block; 
 		width: 100vw; 
-		background: #f9f9f9;
 		margin-bottom: 5%;
 		min-height: 10vh;
-		font-family: 'Roboto', Verdana, Geneva, sans-serif; 
-		color: #343434;
+		font-family: 'Lato', Verdana, Geneva, sans-serif; 
+		font-weight: bolder;
+		color: #f9f9f9f9;
 		text-align: center;
-		font-size: 18px;
-		padding: 8% 0% 8% 0%;
-		border-bottom: solid 8px #3247a0;
+		font-size: 200%;
+		padding: 0% 0% 8% 0%;
+		/*border-bottom: solid 8px #3247a0;
 		border-radius: 7px 7px 0 0;
-		box-shadow: 0px 7px 12px -6px #000;
+		box-shadow: 0px 7px 12px -6px #000;*/
 	}
 	.box1-header {
+		display: none;
 		background: #3247a0;
 		color: #f9f9f9;
 		text-align: center;
@@ -644,11 +645,11 @@ h1 {
 	.box2 {
 		display: block; 
 		width: 100vw; 
-		background: #f9f9f9;
+		background: rgba(255,255,255,0.6);
 		margin-bottom: 5%;
 		min-height: 10vh;
 		font-family: 'Roboto', Verdana, Geneva, sans-serif; 
-		color: #343434;
+		color: #0e0e0e;
 		text-align: center;
 		font-size: 18px;
 		padding: 8% 0% 8% 0%;
@@ -670,11 +671,11 @@ h1 {
 	.box3 {
 		display: block; 
 		width: 100vw; 
-		background: #f9f9f9;
+		background: rgba(255,255,255,0.6);
 		margin-bottom: 5%;
 		min-height: 10vh;
 		font-family: 'Roboto', Verdana, Geneva, sans-serif; 
-		color: #343434;
+		color: #0e0e0e;
 		text-align: center;
 		font-size: 18px;
 		padding: 8% 0% 8% 0%;
