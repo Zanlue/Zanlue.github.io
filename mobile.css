@@ -46,6 +46,7 @@ header {
 	padding: 10px;
 	min-height: 1vh;
 	background: #000;
+	top: 10vh auto;
 }
 footer {
 	position: absolute;
@@ -338,7 +339,6 @@ footer {
 	min-height: 10vh;
 	font-family: 'Lato', Verdana, Geneva, sans-serif; 
 	-webkit-font-family: 'Lato', Verdana, Geneva, sans-serif; 
-	font-weight: bolder;
 	color: #f9f9f9f9;
 	text-align: center;
 	font-size: 200%;
