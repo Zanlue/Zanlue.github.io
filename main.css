@@ -34,12 +34,13 @@ h1 {
 		overflow-x: hidden;
 	}
 	html {
-		background: url(assets/diamond.svg) 50% repeat, #343434;
-		background-size: 5%, cover;
+		background: #343434;
 		z-index: 0;
 		-webkit-overflow-scrolling: touch;
 	}
 	body {
+		background: url(assets/diamond.svg) 50% repeat, #343434;
+		background-size: 5%, cover;
 		overflow-y: scroll;
 	}
 	header {
@@ -318,12 +319,13 @@ h1 {
 		overflow-x: hidden;
 	}
 	html {
-		background: url(assets/diamond.svg) 50% repeat, #343434;
-		background-size: 5%, cover;
+		background: #343434;
 		z-index: 0;
 		-webkit-overflow-scrolling: touch;
 	}
 	body {
+		background: url(assets/diamond.svg) 50% repeat, #343434;
+		background-size: 5%, cover;
 		overflow-y: scroll;
 	}
 	header {
