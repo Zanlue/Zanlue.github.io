@@ -337,8 +337,8 @@ footer {
 	width: 100vw; 
 	margin-bottom: 5%;
 	min-height: 10vh;
-	font-family: 'Roboto', Verdana, Geneva, sans-serif; 
-	/*! font-style: italic; */
+	font-family: 'Josefin Sans', Verdana, Geneva, sans-serif; 
+	font-style: italic;
 	color: #f9f9f9f9;
 	text-align: center;
 	font-size: 150%;
