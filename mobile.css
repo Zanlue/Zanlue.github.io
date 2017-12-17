@@ -333,11 +333,10 @@ footer {
 
 /* Random Box Elements */
 .box1 {
-	display: block; 
 	width: 100vw; 
 	margin-bottom: 5%;
 	min-height: 10vh;
-	font-family: 'Josefin Sans', Verdana, Geneva, sans-serif; 
+	font-family: 'Roboto', Verdana, Geneva, sans-serif; 
 	font-style: italic;
 	color: #f9f9f9f9;
 	text-align: center;
