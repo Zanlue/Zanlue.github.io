@@ -336,6 +336,7 @@ footer {
 	margin-bottom: 5%;
 	min-height: 10vh;
 	font-family: 'Lato', Verdana, Geneva, sans-serif; 
+	-webkit-font-family: 'Lato', Verdana, Geneva, sans-serif; 
 	font-weight: bolder;
 	color: #f9f9f9f9;
 	text-align: center;
