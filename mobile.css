@@ -340,6 +340,8 @@ footer {
 	font-family: 'Lato', 'Roboto', Verdana, Geneva, sans-serif; 
 	font-style: italic;
 	font-weight: bold;
+	-webkit-font-style: italic;
+	-webkit-font-weight: bold;
 	color: #f9f9f9;
 	text-align: center;
 	font-size: 170%;
