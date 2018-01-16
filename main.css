@@ -52,6 +52,8 @@ h1 {
 		grid-template-areas: "header_body"; 
 	}
 	footer {
+		display: flex;
+		justify-content: center;
 		position: absolute;
 		bottom: 0;
 		width: 100%;
@@ -69,7 +71,7 @@ h1 {
 		grid-template-areas:
 			"header header"
 			"sidebar body"
-			"footer footer";
+			"sidebar footer";
 	}
 	.body-content {
      display: grid;
@@ -77,7 +79,7 @@ h1 {
 		 grid-template-rows: repeat(5, 4fr) 1fr;
 		 grid-area: body;  
 	   padding-top: 1vh;
-	   padding-bottom: 0vh;   /* Height of the footer */
+	   padding-bottom: 1vh;   /* Height of the footer */
 	}
 	.header-content {
 		z-index: 9000;
@@ -92,6 +94,9 @@ h1 {
 	}
 	.footer-content {
 		color: #f9f9f9;
+		background: #0e0e0e;
+		width: 7vw;
+		border-radius: 20px;
 		font-family: 'Josefin Sans', Verdana, Geneva, sans-serif;
 		font-size: 120%;
 		text-align: center;
@@ -256,33 +261,15 @@ h1 {
     display: flex;
 		grid-column: 1/9;
 		grid-row: 4/11;
-		flex-direction: column;
-		margin-top: 10%;
+		flex-flow: column nowrap;
+		justify-content: center;
+		/*margin-top: 10%;*/
 	}
   .box2 {
 		display: flex; 
 		flex-direction: column;
 		width: 100%; 
-		background: rgba(255,255,255,0.6);
-		margin: 0 5% 2% 2%;
-		margin-bottom: 5%;
-		min-height: 10vh;
-		font-family: 'Roboto', Verdana, Geneva, sans-serif; 
-		color: #0e0e0e;
-		justify-content: center;
-		text-align: center;
-		font-size: 18px;
-		padding: 0 0% 8% 0%;
-		border-bottom: solid 8px #a03247;
-		/*border-top: solid 8px #a03247;*/
-		border-radius: 7px 7px 0 0;
-		box-shadow: 0px 7px 12px -6px #000;
-	}
-  .box3 {
-		display: flex; 
-		flex-direction: column;
-		width: 100%; 
-		background: rgba(255,255,255,0.6);
+		background: #ca556b;
 		margin: 0 5% 2% 2%;
 		margin-bottom: 5%;
 		min-height: 10vh;
@@ -292,15 +279,35 @@ h1 {
 		text-align: center;
 		font-size: 18px;
 		padding: 8% 0% 8% 0%;
-		border-bottom: solid 8px #47a032;
-		/*border-top: solid 8px #47a032;*/
-		border-radius: 7px 7px 0 0;
-		box-shadow: 0px 7px 12px -6px #000;
+		border: 18px solid #ca556b;
+    outline: 8px double #343434;
+    outline-offset: -18px;
+		box-shadow: 2px 4px 10px;
+	}
+  .box3 {
+		display: flex; 
+		flex-direction: column;
+		width: 100%; 
+		background: #6bca55;
+		margin: 0 5% 2% 2%;
+		margin-bottom: 5%;
+		min-height: 10vh;
+		font-family: 'Roboto', Verdana, Geneva, sans-serif; 
+		color: #0e0e0e;
+		justify-content: center;
+		text-align: center;
+		font-size: 18px;
+		padding: 8% 0% 8% 0%;
+		border: 18px solid #6bca55;
+    outline: 8px double #343434;
+    outline-offset: -18px;
+		box-shadow: 2px 4px 10px;
 	}
 	.box1-header {
 		display: none;
 	}
   .box2-header {
+		display: none;
 		background: #a03247;
 		color: #f9f9f9;
 		text-align: center;
@@ -311,6 +318,7 @@ h1 {
 		margin: -50% 0 45% 0;
 	}
   .box3-header {
+		display: none;
 		background: #47a032;
 		color: #f9f9f9;
 		text-align: center;
@@ -319,6 +327,75 @@ h1 {
 		padding: 5px 0 5px 0;
 		border-radius: 5px 5px 0 0;
 		margin: -50% 0 45% 0;
+	}
+	
+	/* Projects - Backgrounds */
+	#projects-top { 
+		display: flex;
+		grid-column: 1/9 !important;
+		grid-row: 1/6 !important;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-content: space-between;
+		width: 95vw;
+	}
+	.projectinfo-img{
+		margin: 2vh 2vw 1vh 1vw;
+		border-radius: 0%;
+		height: 35vh;
+		border: 8px solid #f9f9f9;
+    outline: 2px solid #f9f9f9;
+    outline-offset: -15px;
+		box-shadow: 2px 4px 10px;
+	}
+	/*.projectinfo-img:hover{
+		flex-grow: 0.5;
+	}*/
+	
+	/* Projects - Bottom Box */
+	#projects-bottom {
+		display: none;
+		position: relative;
+		min-height: 32vh;
+	}
+	.projectinfo-container{
+		position: absolute;
+		background: #f9f9f9;
+		padding-top: 14%;
+		left: 0;
+		right: 0;
+		top: 0;
+		height: 34vh;
+	}
+	.projectinfo-title{
+		display: none;
+		position: absolute;
+		z-index: 100;
+		width: 100vw;
+		background: #000;
+		color: #fff;
+		font-family: 'Josefin Sans', Verdana, Geneva, sans-serif;
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		border-top: solid 4px #f9f9f9;
+		top: 0;
+		box-shadow: 0px 6px 12px -6px #1a1a1a;
+	}
+	.projectinfo-content{
+		display: block;
+		font-family: 'Roboto', Verdana, Geneva, sans-serif;
+		font-size: 18px;
+		color: #343434;
+		text-align: center;
+		padding: 20px 10px 20px 20px;
+	}
+	
+	/* Projects - Buttons */
+	.pbutton{
+		display: none;
 	}
 
   /* Loading Screen */

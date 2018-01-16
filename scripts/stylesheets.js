@@ -6,6 +6,7 @@ function adjustStyle(width) {
   else {
      $("#size-stylesheet").attr("href", "./main.css"); 
 	 $(document.getElementsByClassName("menu-container")).show();
+	  $(document.getElementsByClassName("projectinfo-img")).show();
   }
 }
 
