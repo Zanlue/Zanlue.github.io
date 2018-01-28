@@ -1,14 +1,34 @@
 {
-	"nodes": [
-	  {
-		"id": "bn4",
-		"title": "Java",
-		"text": "Java Stuff"
+	"items": [
+		{
+			"id": "bn1",
+			"title": "News",
+			"text": "Nothing Yet! but there will be, soon...just testing the wrap ability of this box. Don't mind me! Just overflowing for a loooong time."
+			"color": "#ca556b"
 		},
-	  {
-		"id": "bn5",
-		"title": "CSS",
-		"text": "CSS Stuff"
+		{
+			"id": "bn2",
+			"title": "Featured",
+			"text": "Nothing Yet! but there will be, soon...just testing the wrap ability of this box. Don't mind me! Just overflowing for a loooong time."
+			"color": "#6bca55"
+		},
+		{
+			"id": "bn3",
+			"title": "Blankity",
+			"text": "Nothing Yet!"
+			"color": " "
+		},
+		{
+			"id": "bn4",
+			"title": "Blank",
+			"text": "Nothing Yet!"
+			"color": " "
+		},
+		{
+			"id": "bn5",
+			"title": "Blank",
+			"text": "Nothing Yet?"
+			"color": " "
 		}
 	]
 }
