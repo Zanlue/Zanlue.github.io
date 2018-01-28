@@ -1,5 +1,5 @@
 {
-	"items": [
+	"nodes": [
 	  {
 		"id": "bn4",
 		"title": "Java",
@@ -10,5 +10,5 @@
 		"title": "CSS",
 		"text": "CSS Stuff"
 		}
-	]
+	],
 }
