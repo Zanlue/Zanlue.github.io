@@ -13,12 +13,13 @@ $(function(){
 			node.setAttribute("id", items[i].id);
 			node.setAttribute("style", "background: " + items[i].color + "; border: 18px solid " + items[i].color + ";");
 			
-			if (jQuery.isEmptyObject(items[i].image)) {
+			node.innerHTML = '<div class="box-header" style=>' + items[i].title + '</div>' + items[i].text;
+			/*if (jQuery.isEmptyObject(items[i].image)) { // Parsing with Images
 				node.innerHTML = '<div class="box-header" style=>' + items[i].title + '</div>' + items[i].text;
 			}
 			else {
 				node.innerHTML = '<div style="height: 200px; width: 200px; margin:10px 10px 10px 10px;"><img src=' + items[i].image + ' style="width:100%; height:auto;"></div><div class="box-header" style=>' + items[i].title + '</div>' + items[i].text;
-			};
+			};*/
 			boxes.appendChild(node);
 		}
 	});
