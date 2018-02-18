@@ -11,7 +11,7 @@ $(function(){
 			
 			node.setAttribute("class", "box-node");
 			node.setAttribute("id", items[i].id);
-			node.setAttribute("style", "background: " + items[i].color + "; border: 18px solid " + items[i].color + ";");
+			node.setAttribute("style", "background: " + items[i].color + "; border: 18px solid " + items[i].color + ";" + "width: " + (Math.random()*11+20) + "%;");
 			
 			node.innerHTML = '<div class="box-header" style=>' + items[i].title + '</div>' + items[i].text;
 			/*if (jQuery.isEmptyObject(items[i].image)) { // Parsing with Images

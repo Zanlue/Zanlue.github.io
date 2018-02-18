@@ -78,7 +78,7 @@ h1 {
 	.body-content {
      display: grid;
 		 grid-template-columns: repeat(9, 1fr);
-		 grid-template-rows: repeat(5, 4fr) 1fr;
+		 grid-template-rows: repeat(auto-fill, 4fr) 1fr;
 		 grid-area: body; 
 		 height: auto;
 	   padding-top: 1vh;
@@ -266,7 +266,6 @@ h1 {
 		display: flex;
 		grid-column: 1/10;
 		grid-row: 5/11;
-		margin-top: -16vh;
 		flex-flow: row wrap;
 		justify-content: space-around;
 		align-items: stretch;
@@ -276,8 +275,10 @@ h1 {
 		background: #e6e6e6;
 		border: 18px solid #e6e6e6;
 		flex-direction: column;
+		flex: auto;
 		min-width: 20%; 
-		margin: 0 5% 2% 2%;
+		height: 20%;
+		margin: 0 2% 2% 1%;
 		margin-bottom: 5%;
 		font-family: 'Roboto', Verdana, Geneva, sans-serif; 
 		color: #0e0e0e;
@@ -287,7 +288,7 @@ h1 {
 		padding: 20% 1% 20% 1%;
 		outline: 8px double #343434;
 		outline-offset: -18px;
-		box-shadow: 2px 4px 10px;
+		box-shadow: 2px 4px 10px;	
 	}
 	.box1-header {
 		display: none;
