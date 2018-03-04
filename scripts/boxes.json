@@ -2,34 +2,28 @@
 	"items": [
 		{
 			"id": "bn1",
-			"title": "News",
-			"text": "Nothing Yet! but there will be, soon...just testing the wrap ability of this box. Don't mind me! Just overflowing for a loooong time.",
-			"color": "#ca556b"
+			"title": "About this Website",
+			"text": "Why does this place exist? How did it become this way? Coming Soon.",
+			"color": "#343434",
+			"image": "assets/logo.svg"
 		},
 		{
 			"id": "bn2",
-			"title": "Featured",
-			"text": "Nothing Yet! but there will be, soon...just testing the wrap ability of this box. Don't mind me! Just overflowing for a loooong time.",
-			"color": "#6bca55"
+			"title": "Video Game Mods",
+			"text": "Some stuff I made for games when I got bored of them. Coming Soon.",
+			"color": " "
 		},
 		{
 			"id": "bn3",
-			"title": "Blankity",
-			"text": "Nothing Yet!",
+			"title": "Diamond Wallpaper",
+			"text": "A CSS theme I made for Reddit. Coming Soon.",
 			"color": " "
 		},
 		{
 			"id": "bn4",
-			"title": "Blank",
-			"text": "Nothing Yet!",
+			"title": "'Digitalize Scan' Script",
+			"text": "A script for GIMP. Coming Soon.",
 			"color": " "
-		},
-		{
-			"id": "bn5",
-			"title": "Blank",
-			"text": "Nothing Yet?",
-			"color": " ",
-			"image": "assets/avatar.png"
 		}
 	]
 }

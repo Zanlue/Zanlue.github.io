@@ -24,7 +24,7 @@ $(function(){
 				node.innerHTML = '<div class="box-header" style=>' + items[i].title + '</div>' + items[i].text;
 			}
 			else {
-				node.innerHTML = '<div style="height: 200px; width: 200px; margin:10px 10px 10px 10px;"><img src=' + items[i].image + ' style="width:100%; height:auto;"></div><div class="box-header" style=>' + items[i].title + '</div>' + items[i].text;
+				node.innerHTML = '<div style="height: 150px; margin:0 auto; margin:10px 10px 10px 10px;"><img src=' + items[i].image + ' style="width:auto; max-height:100%;"></div><div class="box-header" style=>' + items[i].title + '</div>' + items[i].text;
 			};
 			boxes.appendChild(node);
 			if (parseInt($(document.body).width()) > 700) { (document.querySelector('footer')).parentNode.appendChild(document.querySelector('footer')); }
