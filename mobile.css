@@ -358,7 +358,6 @@ footer {
 }
 .box-node {
 	display: flex; 
-	width: 100vw !important;
 	background: #e6e6e6;
 	border: 18px solid #e6e6e6;
 	flex-direction: column;
