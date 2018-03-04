@@ -19,14 +19,15 @@ $(function(){
 				node.setAttribute("style", "background: " + items[i].color + "; border: 18px solid " + items[i].color + ";" + "width: " + (Math.random()*11+20) + "%;");
 			}
 			
-			node.innerHTML = '<div class="box-header" style=>' + items[i].title + '</div>' + items[i].text;
-			/*if (jQuery.isEmptyObject(items[i].image)) { // Parsing with Images
+			/*node.innerHTML = '<div class="box-header" style=>' + items[i].title + '</div>' + items[i].text;*/
+			if (jQuery.isEmptyObject(items[i].image)) { // Parsing with Images
 				node.innerHTML = '<div class="box-header" style=>' + items[i].title + '</div>' + items[i].text;
 			}
 			else {
 				node.innerHTML = '<div style="height: 200px; width: 200px; margin:10px 10px 10px 10px;"><img src=' + items[i].image + ' style="width:100%; height:auto;"></div><div class="box-header" style=>' + items[i].title + '</div>' + items[i].text;
-			};*/
+			};
 			boxes.appendChild(node);
+			if (parseInt($(document.body).width()) > 700) { (document.querySelector('footer')).parentNode.appendChild(document.querySelector('footer')); }
 		}
 	});
 });
