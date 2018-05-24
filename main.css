@@ -276,7 +276,7 @@ h1 {
 		flex-direction: column;
 		flex: auto;
 		min-width: 20%; 
-		height: 20%;
+		height: auto;
 		margin: 0 2% 2% 1%;
 		margin-bottom: 5%;
 		font-family: 'Roboto', Verdana, Geneva, sans-serif; 
@@ -284,7 +284,7 @@ h1 {
 		justify-content: center;
 		text-align: center;
 		font-size: 18px;
-		padding: 22% 1% 24% 1%;
+		padding: 1% 1% 1% 1%;
 		outline: 8px double #343434;
 		outline-offset: -18px;
 		box-shadow: 2px 4px 10px;	

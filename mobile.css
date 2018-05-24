@@ -36,10 +36,10 @@ html {
 		background: #343434;
 		z-index: 0;
 		-webkit-overflow-scrolling: touch;
+	  overflow-y: scroll;
 	}
 body {
-	background: url(assets/diamond.svg) 50% repeat, #343434;
-	background-size: 5%, cover;
+	background: #000;
 	overflow-y: scroll;
 }
 header {
@@ -57,6 +57,8 @@ footer {
 
 /* Content Containers */
 #page-container {
+	background: url(assets/diamond.svg) 50% repeat, #343434;
+	background-size: 5%, cover;
 	min-height: 100%;
 	position: relative;
 }
