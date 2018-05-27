@@ -31,12 +31,12 @@ html, body {
 	padding:0;
 	height:100%;
 	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+	overflow-y: scroll;
 }
 html {
 		background: #343434;
 		z-index: 0;
-		-webkit-overflow-scrolling: touch;
-	  overflow-y: scroll;
 	}
 body {
 	background: #000;
