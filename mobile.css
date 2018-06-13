@@ -61,6 +61,7 @@ footer {
 	background-size: 5%, cover;
 	min-height: 100%;
 	position: relative;
+	-webkit-overflow-scrolling: touch;
 }
 .body-content {
    padding-top: 1vh;
@@ -140,23 +141,21 @@ footer {
 }
 .nav-button {
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: 300%;
+	font-size: 100%;
 	font-weight: bold;
 	color: #f9f9f9;
 	background: rgba(0, 0, 0, 0.8);
-	width: 45vw;
+	width: 100vw;
 	margin: auto;
-	border-radius: 100% 100% 0 0;
 }
 .nav-close {
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: 300%;
+	font-size: 100%;
 	font-weight: bold;
 	color: #0e0e0e;
 	background: rgba(255, 255, 255, 0.8);
-	width: 45vw;
+	width: 100vw;
 	margin: auto;
-	border-radius: 100% 100% 0 0;
 }
 .menu-container {
 	position: fixed;
@@ -363,7 +362,7 @@ footer {
 	background: #e6e6e6;
 	border: 18px solid #e6e6e6;
 	flex-direction: column;
-	margin: 2% 0% 5% 0%;
+	margin: 2% 3.5% 5% 3.5%;
 	margin-bottom: 2vh;
 	font-family: 'Roboto', Verdana, Geneva, sans-serif; 
 	color: #0e0e0e;
