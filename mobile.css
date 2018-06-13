@@ -141,7 +141,7 @@ footer {
 }
 .nav-button {
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: 100%;
+	font-size: 150%;
 	font-weight: bold;
 	color: #f9f9f9;
 	background: rgba(0, 0, 0, 0.8);
@@ -150,7 +150,7 @@ footer {
 }
 .nav-close {
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: 100%;
+	font-size: 150%;
 	font-weight: bold;
 	color: #0e0e0e;
 	background: rgba(255, 255, 255, 0.8);
