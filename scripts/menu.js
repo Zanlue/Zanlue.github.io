@@ -39,7 +39,7 @@ $(function(){
 			else if ((menu_state == 'closed') && (touching == true)) {
 				$(button[0]).hide("slide", {direction: "down"}, 200);
 			};
-		}, 3000);
+		}, 5000);
 	});
 	
 	document.addEventListener('touchstart', function(event){

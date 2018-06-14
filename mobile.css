@@ -141,21 +141,21 @@ footer {
 }
 .nav-button {
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: 150%;
+	font-size: 200%;
 	font-weight: bold;
 	color: #f9f9f9;
 	background: rgba(0, 0, 0, 0.8);
-	width: 10vw;
+	width: 13vw;
 	float: right;
 	margin: auto;
 }
 .nav-close {
 	font-family: Verdana, Geneva, sans-serif;
-	font-size: 150%;
+	font-size: 200%;
 	font-weight: bold;
 	color: #0e0e0e;
 	background: rgba(255, 255, 255, 0.8);
-	width: 10vw;
+	width: 13vw;
 	float: right;
 	margin: auto;
 }
@@ -195,6 +195,9 @@ footer {
 }
 
 /* Index - Avatar */
+#avatar-wrap {
+	display: block;
+}
 #avatar {
 	display: block;
 	margin: auto;
@@ -341,14 +344,19 @@ footer {
 	margin-bottom: 0%;
 	min-height: 10vh;
 	font-family: 'Roboto', Verdana, Geneva, sans-serif; 
-	font-style: italic;
+	font-style: normal;
 	font-weight: lighter;
 	-webkit-font-style: italic;
 	-webkit-font-weight: bold;
 	color: #f9f9f9;
 	text-align: center;
-	font-size: 170%;
+	font-size: 150%;
 	padding: 0% 0% 8% 0%;
+	text-shadow: 
+		-1px -1px 0 #0e0e0e,  
+    	1px -1px 0 #0e0e0e,
+    	-1px 1px 0 #0e0e0e,
+     	1px 1px 0 #0e0e0e;
 	/*border-bottom: solid 8px #3247a0;
 	border-radius: 7px 7px 0 0;
 	box-shadow: 0px 7px 12px -6px #000;*/
