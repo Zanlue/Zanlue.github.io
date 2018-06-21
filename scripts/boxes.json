@@ -24,6 +24,12 @@
 			"title": "'Digitalize Scan' Script",
 			"text": "A script for GIMP. Coming Soon.",
 			"color": " "
+		},
+		{
+			"id": "bn5",
+			"title": "Blank",
+			"text": "A placeholder box for testing purposes. Expect it to disappear soon.",
+			"color": "#ffffff",
 		}
 	]
 }
