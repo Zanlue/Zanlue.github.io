@@ -2,6 +2,8 @@
 #banner {
   grid-column: 1/10;
   grid-row: 1/7;
+  -webkit-grid-column: 1/10;
+  -webkit-grid-row: 1/7;
   height: 50vh;
   margin-top: 1vh;
   border: 8px solid #f9f9f9;
@@ -27,6 +29,8 @@
   outline-offset: -18px;
   grid-column: 2/9;
   grid-row: 7/10;
+  -webkit-grid-column: 2/9;
+  -webkit-grid-row: 7/10;	
   height: auto;
   box-shadow: 2px 4px 10px;
   transform: translateY(-15vh);
