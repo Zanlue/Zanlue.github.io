@@ -1,3 +1,29 @@
+/* 
+==================================================
+Blue: #3247a0
+Red: #a03247
+Green: #47a032
+Gray: #343434
+White: #f9f9f9
+
+blue: #8299ff
+red: #ca556b
+green: #6bca55
+gray: #e6e6e6
+
+BLUE: #202d66
+RED: #66202d
+GREEN: #2d6620
+GRAY: #0e0e0e
+
+- Fonts -
+Header: Josefin Sans
+Body: Roboto
+Quotes/Italics: Lato
+Handwritten: Shadows into Light Two
+==================================================
+*/
+
 /* Banner Image*/
 #banner {
   grid-column: 1/10;
@@ -28,7 +54,7 @@
   outline: 8px double #343434;
   outline-offset: -18px;
   grid-column: 2/9;
-  grid-row: 7/10;
+  grid-row: 7/9;
   -webkit-grid-column: 2/9;
   -webkit-grid-row: 7/10;	
   height: auto;
@@ -50,17 +76,86 @@
   font-weight: bold;
 }
 
-/* Title and Body */
-#post-title {
-  font-family: 'Josefin Sans';
-  font-size: 200%;
-  padding-bottom: 1vh;
-}
-#post-body {
-  font-family: 'Roboto';
+/* Markdown */
+#post-content {
+  font-family: 'Roboto', Verdana, sans-serif;
   line-height: 1.6;
   margin-bottom: 5%;
+}
+h1, h2, h3 {
+  font-family: 'Josefin Sans', "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 2.5rem;
+  margin: 1vh 0 2vh 0;
+  font-weight: normal;
+  line-height: 1.15;
+}
+h2, h3 {
+  font-size: 1.8rem;
+  margin-top: 32px;
+}
+h3 {
+  font-size: 1.5rem;
+  margin-top: 32px;
+}
+a, a:visited {
+  text-decoration: none;
+  color: #3247a0;
+  font-weight: bold;
+}
+a:visited {
+  color: #8299ff;
+}
+code {
+  border: solid 2px #868686;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 25px 0 25px 0;
+  display: block;
+  background: #343434;
+  color: #e6e6e6;
+}
+.underline {
+  border-bottom: solid 2px;
+  border-radius: 2px;
+}
+.spoiler {
+  color: transparent;
+  text-shadow: 0 0 8px rgba(0,0,0,0.5);
+  transition: all 0.65s ease-in;
+}
+.spoiler:hover {
+  color: #0e0e0e;
+  text-shadow: 0 0 0 rgba(0,0,0,0);
+  transition: all 0.65s ease-out;
+}
+#post-content img {
+  width: 100%;
+  outline: 7px double #e6e6e6;
+  outline-offset: -18px;
 }
 
 /* Making room for footer */
 .body-content { margin-bottom: -45px; }
+
+/* Comments */
+#comments-box {
+  display: flex;
+  padding: 15% 5% 15% 5%;
+  margin: 4vh 0 0 0;
+  flex-direction: column;
+  background: #343434;
+  border: 18px solid #343434;
+  color: #e6e6e6;
+  outline: 8px double #e6e6e6;
+  outline-offset: -18px;
+  grid-column: 2/9;
+  grid-row: 9/10;
+  -webkit-grid-column: 2/9;
+  -webkit-grid-row: 7/10;
+  height: auto;
+  box-shadow: 2px 4px 10px #0e0e0e;
+  transform: translateY(-15vh);
+  text-align: center;
+  font-family: 'Josefin Sans', Verdana, sans-serif;
+  font-size: 1.5rem;
+}
