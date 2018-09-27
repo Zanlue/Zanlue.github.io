@@ -403,6 +403,41 @@ footer {
 	margin: 0%;
 }
 
+/* Links */
+	.media-links-box {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content:   center;
+		align-items: center;
+		margin: 0 0 3vh 0;
+	}
+	.media-icon, .media-icon:visited {
+		height: 8vh;
+		opacity: 0.55;
+		width: 8vh;
+		margin: 0 10px 0 10px;
+		transition: opacity 0.8s linear;
+	}
+	.media-icon:hover, .media-icon:active {
+		height: 8vh;
+		opacity: 0.93;
+		width: 8vh;
+		margin: 0 10px 0 10px;
+		transition: opacity 0.25s linear;
+	}
+	#twitter {
+		background: url(./assets/links/Twitter.svg) no-repeat center;
+		background-size: contain;
+	}
+	#github {
+		background: url(./assets/links/Github.svg) no-repeat center;
+		background-size: contain;
+	}
+	#instagram {
+		background: url(./assets/links/Instagram.svg) no-repeat center;
+		background-size: contain;
+	}
+
 /* Loading Screen */
 #loadscreen-container {
 	z-index: 999999999;
