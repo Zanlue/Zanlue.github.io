@@ -1,4 +1,4 @@
-/* 
+/*
 ==================================================
 Blue: #3247a0
 Red: #a03247
@@ -56,7 +56,7 @@ h1 {
 		background: #000;
 		display: grid;
 		grid-template-rows: 100%;
-		grid-template-areas: "header_body"; 
+		grid-template-areas: "header_body";
 	}
 	footer {
 		display: flex;
@@ -66,7 +66,7 @@ h1 {
 		grid-area: footer;
 		height: auto;
 	}
-	
+
 	/* Content Containers */
 	#page-container {
 		  overflow-y: scroll;
@@ -83,7 +83,7 @@ h1 {
      display: grid;
 		 grid-template-columns: repeat(9, 1fr);
 		 grid-template-rows: repeat(auto-fill, 4fr) 1fr;
-		 grid-area: body; 
+		 grid-area: body;
 		 height: auto;
 	   padding-top: 1vh;
 	   padding-bottom: 1vh;   /* Height of the footer */
@@ -120,7 +120,7 @@ h1 {
 		color: #ca556b;
 		text-decoration: none;
 	}
-	
+
 	/* Logo */
 	.header-logo {
 		grid-column: 6/7;
@@ -139,7 +139,7 @@ h1 {
 		text-decoration: none;
 	}
 	/*.header-logo:after {
-		content: "zanlue.github.io";
+		content: "zlrc.github.io";
 		position: absolute;
 		top: 5%;
 		left: 22%;
@@ -151,7 +151,7 @@ h1 {
 		background-image: radial-gradient(18vw, #f9f9f9, rgba(0,0,0,0)), radial-gradient(18vw, #f9f9f9, rgba(0,0,0,0));
 		background-position: 0, 0, 0, 100%;
 	}
-	
+
 	/* Navigation */
 	.nav-container {
 		z-index: 9001;
@@ -233,7 +233,7 @@ h1 {
 		text-decoration: none;
 		transition: all 0.65s linear;
 	}
-	
+
   /* Index - Avatar */
 	#avatar-wrap {
 		display: flex;
@@ -246,20 +246,20 @@ h1 {
 		z-index: 10;
 	}
 	#avatar {
-		width: 75%; 
-		border-radius: 100%; 
+		width: 75%;
+		border-radius: 100%;
 		box-shadow: 0px 12px 10px -8px #101010
 	}
 
   /* Box Elements */
 	.box1 {
-		display: flex; 
+		display: flex;
 		grid-column: 1/10;
 		grid-row: 2/3;
-		width: auto; 
+		width: auto;
 		margin: 0 2% 0% 2%;
 		min-height: 10vh;
-		font-family: 'Lato', Verdana, Geneva, sans-serif; 
+		font-family: 'Lato', Verdana, Geneva, sans-serif;
 		font-weight: bolder;
 		font-style: italic;
 		transform: skewX(5deg) translate(0.5%);
@@ -280,15 +280,15 @@ h1 {
 		align-items: stretch;
 	}
 	.box-node {
-		display: flex; 
+		display: flex;
 		background: #e6e6e6;
 		border: 18px solid #e6e6e6;
 		flex-direction: column;
 		flex: auto;
-		min-width: 20%; 
+		min-width: 20%;
 		height: auto;
 		margin: 0 1% 2% 1%;
-		font-family: 'Roboto', Verdana, Geneva, sans-serif; 
+		font-family: 'Roboto', Verdana, Geneva, sans-serif;
 		color: #0e0e0e;
 		justify-content: center;
 		text-align: center;
@@ -296,7 +296,7 @@ h1 {
 		padding: 1% 1% 1% 1%;
 		outline: 8px double #343434;
 		outline-offset: -18px;
-		box-shadow: 2px 4px 10px;	
+		box-shadow: 2px 4px 10px;
 	}
 	.box1-header {
 		display: none;
@@ -309,7 +309,7 @@ h1 {
 		padding: 5px 0 5px 0;
 		margin: 0%;
 	}
-	
+
 	/* Links */
 	.media-links-box {
 		display: flex;
@@ -339,16 +339,16 @@ h1 {
 		background-size: contain;
 	}
 	#github {
-		background: url(./assets/links/Github.svg) no-repeat center;
+		background: url(./assets/links/GitHub.svg) no-repeat center;
 		background-size: contain;
 	}
 	#instagram {
 		background: url(./assets/links/Instagram.svg) no-repeat center;
 		background-size: contain;
 	}
-	
+
 	/* Projects - Backgrounds */
-	#projects-top { 
+	#projects-top {
 		display: flex;
 		grid-column: 1/9 !important;
 		grid-row: 1/6 !important;
@@ -369,7 +369,7 @@ h1 {
 	/*.projectinfo-img:hover{
 		flex-grow: 0.5;
 	}*/
-	
+
 	/* Projects - Bottom Box */
 	#projects-bottom {
 		display: none;
@@ -410,7 +410,7 @@ h1 {
 		text-align: center;
 		padding: 20px 10px 20px 20px;
 	}
-	
+
 	/* Projects - Buttons */
 	.pbutton{
 		display: none;
@@ -453,7 +453,7 @@ h1 {
 	@keyframes grow {
 		to { transform: scale(999,999) rotate(180deg); }
 	}
-	
+
 }
 
 
@@ -498,7 +498,7 @@ h1 {
 		width: 100%;
 		height: 7vh;   /* Height of the footer */
 	}
-	
+
 	/* Content Containers */
 	#page-container {
 	    min-height: 100%;
@@ -535,7 +535,7 @@ h1 {
 		color: #ca556b;
 		text-decoration: none;
 	}
-	
+
 	/* Logo */
 	.header-logo, .header-logo img{
 		position: inherit;
@@ -551,7 +551,7 @@ h1 {
 		text-decoration: none;
 	}
 	/*.header-logo:after {
-		content: "zanlue.github.io";
+		content: "zlrc.github.io";
 		position: absolute;
 		font-family: 'Shadows Into Light Two', cursive, Impact, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 		color: #f9f9f9;
@@ -561,7 +561,7 @@ h1 {
 		background-image: radial-gradient(18vw, #f9f9f9, rgba(0,0,0,0)), radial-gradient(18vw, #f9f9f9, rgba(0,0,0,0));
 		background-position: 0, 0, 0, 100%;
 	}
-	
+
 	/* Navigation */
 	.nav-container {
 		z-index: 9001;
@@ -634,16 +634,16 @@ h1 {
 		text-shadow: 0px 0px 8px #fff;
 		text-decoration: none;
 	}
-	
+
 	/* Index - Avatar */
 	#avatar {
 		display: block;
 		margin: auto;
-		width: 40%; 
-		border-radius: 100%; 
+		width: 40%;
+		border-radius: 100%;
 		box-shadow: 0px 12px 10px -8px #101010
 	}
-	
+
 	/* Projects - Backgrounds */
 	#projects-top {
 		min-height: 93vh;
@@ -656,7 +656,7 @@ h1 {
 		height: 95vh;
 		min-height: 59vh;
 	}
-	
+
 	/* Projects - Bottom Box */
 	#projects-bottom {
 		position: relative;
@@ -720,7 +720,7 @@ h1 {
 		top: 0;
 		box-shadow: 0px 6px 12px -6px #1a1a1a;
 	}
-	
+
 	/* Projects - Buttons */
 	.pbutton{
 		position: relative;
@@ -774,14 +774,14 @@ h1 {
 		float: right;
 		right: 0;
 	}
-	
+
 	/* Random Box Elements */
 	.box1 {
 		display: block;
-		width: 100vw; 
+		width: 100vw;
 		margin-bottom: 5%;
 		min-height: 10vh;
-		font-family: 'Lato', 'Roboto', Verdana, Geneva, sans-serif; 
+		font-family: 'Lato', 'Roboto', Verdana, Geneva, sans-serif;
 		font-style: italic;
 		font-weight: bold;
 		color: #f9f9f9;
@@ -805,12 +805,12 @@ h1 {
 		top: -5px;
 	}
 	.box2 {
-		display: block; 
-		width: 100vw; 
+		display: block;
+		width: 100vw;
 		background: rgba(255,255,255,0.6);
 		margin-bottom: 5%;
 		min-height: 10vh;
-		font-family: 'Roboto', Verdana, Geneva, sans-serif; 
+		font-family: 'Roboto', Verdana, Geneva, sans-serif;
 		color: #0e0e0e;
 		text-align: center;
 		font-size: 18px;
@@ -831,12 +831,12 @@ h1 {
 		top: -5px;
 	}
 	.box3 {
-		display: block; 
-		width: 100vw; 
+		display: block;
+		width: 100vw;
 		background: rgba(255,255,255,0.6);
 		margin-bottom: 5%;
 		min-height: 10vh;
-		font-family: 'Roboto', Verdana, Geneva, sans-serif; 
+		font-family: 'Roboto', Verdana, Geneva, sans-serif;
 		color: #0e0e0e;
 		text-align: center;
 		font-size: 18px;
@@ -856,7 +856,7 @@ h1 {
 		border-radius: 5px 5px 0 0;
 		top: -5px;
 	}
-	
+
 	/* Loading Screen */
 	#loadscreen-container {
 		z-index: 999999999;
@@ -894,7 +894,7 @@ h1 {
 	@keyframes grow {
 		to { transform: scale(999,999) rotate(180deg); }
 	}
-	
+
 	/* Blog - Post Previews */
 	#posts-container {
 		display: flex;
@@ -902,12 +902,12 @@ h1 {
 		flex-wrap: nowrap;
 	}
 	summary {
-		display: flex; 
-		width: 100vw; 
+		display: flex;
+		width: 100vw;
 		background: #f9f9f9;
 		margin-bottom: 5%;
 		min-height: 20vh;
-		font-family: 'Roboto', Verdana, Geneva, sans-serif; 
+		font-family: 'Roboto', Verdana, Geneva, sans-serif;
 		color: #343434;
 		text-align: left;
 		padding: 1% 0% 1% 0%;
@@ -951,7 +951,7 @@ h1 {
 		color: #ca556b;
 		clear: both;
 	}
-	
+
 	/* Blog - Image Thumbnails */
 	.post-thumbnail {
 		position: absolute;
@@ -976,14 +976,14 @@ h1 {
 	  height: 200%;
 	  width: auto;
 	}
-	
+
 	/* Blog - Post Details */
 	.details-wrapper {
 		background: #f9f9f9;
 		color: #343434;
 		margin-top: -5%;
 		padding: 1% 3% 1% 3%;
-		font-family: 'Roboto', Verdana, Geneva, sans-serif; 
+		font-family: 'Roboto', Verdana, Geneva, sans-serif;
 		font-size: 18px;
 		border-bottom: solid 8px #343434;
 		box-shadow: 0px 7px 12px -6px #000;
@@ -997,7 +997,7 @@ h1 {
 		padding: 0 2% 0 2%;
 		font-family: 'Lato', Courier, sans-serif;
 		font-weight: bold;
-		color: #f9f9f9; 
+		color: #f9f9f9;
 		background: #47a032;
 		border-radius: 5px;
 		box-shadow: -2px 2px 2px 0px #000;

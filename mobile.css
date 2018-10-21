@@ -1,4 +1,4 @@
-/* 
+/*
 ==================================================
 Blue: #3247a0
 Red: #a03247
@@ -110,7 +110,7 @@ footer {
 	text-decoration: none;
 }
 /*.header-logo:after {
-	content: "zanlue.github.io";
+	content: "zlrc.github.io";
 	position: absolute;
 	font-family: 'Shadows Into Light Two', cursive, Impact, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color: #f9f9f9;
@@ -201,8 +201,8 @@ footer {
 #avatar {
 	display: block;
 	margin: auto;
-	width: 40%; 
-	border-radius: 100%; 
+	width: 40%;
+	border-radius: 100%;
 	box-shadow: 0px 12px 10px -8px #101010
 }
 
@@ -340,10 +340,10 @@ footer {
 /* Box Elements */
 .box1 {
 	display: block;
-	width: 100vw; 
+	width: 100vw;
 	margin-bottom: 0%;
 	min-height: 10vh;
-	font-family: 'Roboto', Verdana, Geneva, sans-serif; 
+	font-family: 'Roboto', Verdana, Geneva, sans-serif;
 	font-style: normal;
 	font-weight: lighter;
 	-webkit-font-style: italic;
@@ -352,8 +352,8 @@ footer {
 	text-align: center;
 	font-size: 150%;
 	padding: 0% 0% 8% 0%;
-	text-shadow: 
-		-1px -1px 0 #0e0e0e,  
+	text-shadow:
+		-1px -1px 0 #0e0e0e,
     	1px -1px 0 #0e0e0e,
     	-1px 1px 0 #0e0e0e,
      	1px 1px 0 #0e0e0e;
@@ -368,13 +368,13 @@ footer {
 	/*margin-top: 10%;*/
 }
 .box-node {
-	display: flex; 
+	display: flex;
 	background: #e6e6e6;
 	border: 18px solid #e6e6e6;
 	flex-direction: column;
 	margin: 2% 3.5% 5% 3.5%;
 	margin-bottom: 2vh;
-	font-family: 'Roboto', Verdana, Geneva, sans-serif; 
+	font-family: 'Roboto', Verdana, Geneva, sans-serif;
 	color: #0e0e0e;
 	text-align: center;
 	font-size: 18px;
@@ -483,12 +483,12 @@ footer {
 	flex-wrap: nowrap;
 }
 summary {
-	display: flex; 
-	width: 100vw; 
+	display: flex;
+	width: 100vw;
 	background: #f9f9f9;
 	margin-bottom: 5%;
 	min-height: 20vh;
-	font-family: 'Roboto', Verdana, Geneva, sans-serif; 
+	font-family: 'Roboto', Verdana, Geneva, sans-serif;
 	color: #343434;
 	text-align: left;
 	padding: 1% 0% 1% 0%;
@@ -564,7 +564,7 @@ p.post-tags {
 	color: #343434;
 	margin-top: -5%;
 	padding: 1% 3% 1% 3%;
-	font-family: 'Roboto', Verdana, Geneva, sans-serif; 
+	font-family: 'Roboto', Verdana, Geneva, sans-serif;
 	font-size: 18px;
 	border-bottom: solid 8px #343434;
 	box-shadow: 0px 7px 12px -6px #000;
@@ -578,7 +578,7 @@ p.post-tags {
 	padding: 0 2% 0 2%;
 	font-family: 'Lato', Courier, sans-serif;
 	font-weight: bold;
-	color: #f9f9f9; 
+	color: #f9f9f9;
 	background: #47a032;
 	border-radius: 5px;
 	box-shadow: -2px 2px 2px 0px #000;
