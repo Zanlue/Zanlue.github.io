@@ -2,28 +2,10 @@
 	"items": [
 		{
 			"id": "bn1",
-			"title": "About this Website",
-			"text": "Why does this place exist? How did it become this way? Coming Soon.",
-			"color": "#d88af2",
-			"image": "assets/logo.svg"
-		},
-		{
-			"id": "bn2",
-			"title": "Video Game Mods",
-			"text": "Some stuff I made for games when I got bored of them. Coming Soon.",
-			"color": " "
-		},
-		{
-			"id": "bn3",
-			"title": "Diamond Wallpaper",
-			"text": "A CSS theme I made for Reddit. Coming Soon.",
-			"color": " "
-		},
-		{
-			"id": "bn4",
-			"title": "'Digitalize Scan' Script",
-			"text": "A script for GIMP. Coming Soon.",
-			"color": " "
+			"title": "Can.dl",
+			"text": "My Discord Bot: https://github.com/zlrc/Can.dl",
+			"color": " ",
+			"image": "https://imgur.com/tF9Gz3I.png"
 		}
 	]
 }
