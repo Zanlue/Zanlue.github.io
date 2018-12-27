@@ -248,7 +248,7 @@ h1 {
 	#avatar {
 		width: 75%;
 		border-radius: 100%;
-		box-shadow: 0px 12px 10px -8px #101010
+		/*box-shadow: 0px 12px 10px -8px #101010*/
 	}
 
   /* Box Elements */
@@ -346,6 +346,28 @@ h1 {
 		background: url(./assets/links/Instagram.svg) no-repeat center;
 		background-size: contain;
 	}
+
+  /* Box Dividers */
+  .box-divider {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3vh 0 3vh 0;
+  }
+  .divider-line {
+    background: #ffffff;
+    display: flex;
+    height: 1px;
+    width: 33%;
+    flex: auto;
+  }
+  .divider-header {
+    color: #ffffff;
+    margin: auto 2% auto 2%;
+    font-family: 'Roboto', Verdana, Geneva, sans-serif;;
+    font-size: 160%;
+  }
 
 	/* Projects - Backgrounds */
 	#projects-top {
