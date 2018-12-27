@@ -3,7 +3,7 @@
 		{
 			"id": "bn1",
 			"title": "Can.dl",
-			"text": "My Discord Bot<br>(<a href=https://github.com/zlrc/Can.dl>View on GitHub</a>)",
+			"text": "My Discord Bot<br><a href="https://github.com/zlrc/Can.dl" style="font-size: 85%;">[View on GitHub]</a>",
 			"color": " ",
 			"image": "https://imgur.com/tF9Gz3I.png"
 		}

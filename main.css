@@ -309,6 +309,14 @@ h1 {
 		padding: 5px 0 5px 0;
 		margin: 0%;
 	}
+  a, a:visited {
+    text-decoration: none;
+    color: #3247a0;
+    font-weight: bold;
+  }
+  a:visited {
+    color: #8299ff;
+  }
 
 	/* Links */
 	.media-links-box {
