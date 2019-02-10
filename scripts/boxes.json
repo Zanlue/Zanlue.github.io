@@ -17,7 +17,7 @@
 		{
 			"id": "bn3",
 			"title": "BLT",
-			"text": "<b>B</b>ook <b>L</b>ookup <b>T</b>ool<br>You give it a list of ISBNs, it gives you a list of books and their rental prices.<br><a href=\"https://github.com/zlrc/book-lookup-tool\" style=\"font-size: 85%;\">< More Info ></a>",
+			"text": "<p><b>B</b>ook <b>L</b>ookup <b>T</b>ool</p><br>You give it a list of ISBNs, it gives you a list of books and their rental prices.<br><a href=\"https://github.com/zlrc/book-lookup-tool\" style=\"font-size: 85%;\">< More Info ></a>",
 			"color": " ",
 			"image": "https://i.imgur.com/KDpXJ0T.png"
 		}
