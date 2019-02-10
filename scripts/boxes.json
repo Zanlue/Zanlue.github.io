@@ -9,17 +9,17 @@
 		},
 		{
 			"id": "bn2",
+			"title": "BLT",
+			"text": "<p style=\"margin: 0 0 0 0;\"><b>B</b>ook <b>L</b>ookup <b>T</b>ool</p><br>You give it a list of ISBNs, it gives you a list of books and their rental prices.<br><a href=\"https://github.com/zlrc/book-lookup-tool\" style=\"font-size: 85%;\">< More Info ></a>",
+			"color": " ",
+			"image": "https://i.imgur.com/KDpXJ0T.png"
+		},
+		{
+			"id": "bn3",
 			"title": "Scan Digitalizer",
 			"text": "A GIMP script that cleans up scanned drawings.<br><a href=\"https://github.com/zlrc/script-fu-digiscan\" style=\"font-size: 85%;\">< More Info ></a>",
 			"color": " ",
 			"image": "https://i.imgur.com/xr2fsN4.png"
-		},
-		{
-			"id": "bn3",
-			"title": "BLT",
-			"text": "<p><b>B</b>ook <b>L</b>ookup <b>T</b>ool</p><br>You give it a list of ISBNs, it gives you a list of books and their rental prices.<br><a href=\"https://github.com/zlrc/book-lookup-tool\" style=\"font-size: 85%;\">< More Info ></a>",
-			"color": " ",
-			"image": "https://i.imgur.com/KDpXJ0T.png"
 		}
 	]
 }
